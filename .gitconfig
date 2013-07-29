@@ -1,0 +1,10 @@
+[user]
+	name = shusay
+  email = shusay.t@gmail.com
+
+[color]
+  ui=auto
+
+[core]
+  excludesfile=~/.gitignore
+  editor=vim
