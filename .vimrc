@@ -1,14 +1,8 @@
 set nocompatible
-filetype plugin indent off
-
-set shiftwidth=2 tabstop=2
-set expandtab
-set autoindent smartindent
-set number
-autocmd BufWritePre * :%s/\s\+$//ge "保存時に行末の空白除去
+filetype plugin off
 
 if has('vim_starting')
-  set runtimepath+=~/.vim/bundle/neobundle.vim
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
 call neobundle#rc(expand('~/.vim/bundle/'))
@@ -17,7 +11,14 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 " Plugin
-NeoBundle 'Shougo/vimproc'
+NeoBundle 'Shougo/vimproc', {
+      \ 'build' : {
+      \   'windows' : 'make -f make_mingw32.mak',
+      \   'cygwin' : 'make -f make_cygwin.mak',
+      \   'mac' : 'make -f make_mac.mak',
+      \   'unix' : 'make -f make_unix.mak',
+      \   },
+      \ }
 NeoBundle 'VimClojure'
 NeoBundle 'Shougo/vimshell'
 NeoBundle 'Shougo/unite.vim'
@@ -53,12 +54,25 @@ NeoBundle 'thinca/vim-ref'
 NeoBundle 'altercation/vim-colors-solarized'
 
 " openbrowser
-NeoBundleInstall 'tyru/open-browser.vim'
+NeoBundle 'tyru/open-browser.vim'
+
+" design/client
+NeoBundle 'hail2u/vim-css3-syntax'
+NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'taichouchou2/vim-javascript'
+NeoBundle 'tpope/vim-haml'
+NeoBundle 'cakebaker/scss-syntax.vim'
 
 filetype plugin indent on
 
 " Installation Check
 NeoBundleCheck
+
+set shiftwidth=2 tabstop=2
+set expandtab
+set smartindent
+set number
+autocmd BufWritePre * :%s/\s\+$//ge "保存時に行末の空白除去
 
 " powerline
 set t_Co=256
@@ -91,4 +105,14 @@ let g:Powerline_colorscheme = 'Solarized256_dark'
 colorscheme solarized
 
 " tmux
-set clipboard=unnamed
+set clipboard=unnamed,autoselect
+
+" ビープ音を消す
+set noerrorbells
+set vb t_vb=
+
+" スワップファイルを作らない
+set noswapfile
+
+" 対応括弧表示
+set showmatch

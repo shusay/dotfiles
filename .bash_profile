@@ -1,23 +1,12 @@
-export PATH=$PATH:~/bin
+PATH=/usr/local/bin:/usr/local/sbin:/Users/shusay/.rbenv/shims:/Users/shusay/.rbenv/versions:/Users/shusay/.rbenv/version:/usr/bin:$PATH
+
+export PATH
 
 # Emacs
 alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs -nw'
 
 # rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
-
-# completion
-autoload -U compinit
-compinit
-zstyle ':completion:*:default' menu select=2
-
-# COLORS
-# 名前で色を付けるようにする
-autoload colors
-colors
-
-# PROMPT
-PROMPT='[%n@%m %C]%% '
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # VPS_alias
 alias vps='ssh -p 10239 shusay@133.242.191.118'
@@ -28,11 +17,7 @@ alias la='ls -a'
 alias ll='ls -l'
 alias lal='ls -al'
 
-# cmd
-alias src='source'
-
 # vivivit
 alias vivivit='cd ~/workspace/wannar4user'
 alias vivivit-admin='cd ~/workspace/vivivit-admin'
 alias vivivit-inc='cd ~/workspace/vivivitinc'
-alias vivivitcom='cd ~/workspace/vivivitcom'
