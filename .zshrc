@@ -21,9 +21,14 @@ PROMPT='[%n@%m %C]%% '
 
 # VPS_alias
 alias vps='ssh -p 10239 shusay@133.242.191.118'
+alias vpsa='ssh -p 10239 admin@133.242.191.118'
 
 # cmd
 alias v='vim'
+alias g='git'
+alias gl='git log'
+alias gst='git status'
+
 alias la='ls -a'
 alias ll='ls -l'
 alias lal='ls -al'
