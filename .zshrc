@@ -33,11 +33,14 @@ alias la='ls -a'
 alias ll='ls -l'
 alias lal='ls -al'
 
-# cmd
 alias src='source'
+
+alias ..='cd ../'
+alias cda='cd apps'
+alias cdv='cd views'
 
 # vivivit
 alias vivivit='cd ~/workspace/wannar4user'
 alias vivivit-admin='cd ~/workspace/vivivit-admin'
 alias vivivit-inc='cd ~/workspace/vivivitinc'
-alias vivivitcom='cd ~/workspace/vivivitcom'
+alias vrbn='cd ~/workspace/vivivit_recruit_bn'
