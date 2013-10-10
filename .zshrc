@@ -14,7 +14,10 @@ zstyle ':completion:*:default' menu select=2
 # COLORS
 # 名前で色を付けるようにする
 autoload colors
-colors
+zstyle ':completion:*' list-colors "${LS_COLORS}"
+
+# No beep
+setopt NO_BEEP
 
 # PROMPT
 PROMPT='[%n@%m %C]%% '
@@ -38,6 +41,8 @@ alias src='source'
 alias ..='cd ../'
 alias cda='cd apps'
 alias cdv='cd views'
+
+alias be='bundle exec'
 
 # vivivit
 alias vivivit='cd ~/workspace/wannar4user'
