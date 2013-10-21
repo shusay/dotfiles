@@ -88,6 +88,7 @@ set termencoding=UTF-8
 "" search
 set incsearch
 set hlsearch
+nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
 set ignorecase
 set smartcase

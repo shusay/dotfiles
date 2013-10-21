@@ -15,7 +15,12 @@ zstyle ':completion:*:default' menu select=2
 # COLORS
 # 名前で色を付けるようにする
 autoload colors
-zstyle ':completion:*' list-colors "${LS_COLORS}"
+zstyle ':completion:*' list-colors 'di=34' 'ln=35' 'so=32' 'ex=31' 'bd=46;34' 'cd=43;34' "${LS_COLORS}"
+export LSCOLORS=exfxcxdxbxegedabagacad
+export LS_COLORS='di=34:ln=35:so=32:pi=33:ex=31:bd=46;34:cd=43;34:su=41;30:sg=46;30:tw=42;30:ow=43;30'
+
+alias ls="ls -GF"
+alias gls="gls --color"
 
 # No beep
 setopt NO_BEEP
@@ -45,6 +50,9 @@ alias cda='cd apps'
 alias cdv='cd views'
 
 alias be='bundle exec'
+
+# keyremap4macbook
+alias private='vim /Users/shusay/Library/"Application Support"/KeyRemap4MacBook/private.xml'
 
 # vivivit
 alias vivivit='cd ~/workspace/wannar4user'
