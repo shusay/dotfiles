@@ -76,6 +76,7 @@ autocmd BufWritePre * :%s/\s\+$//ge "保存時に行末の空白除去
 
 " powerline
 set t_Co=256
+set t_ut=
 let g:Powerline_symbols = 'fancy'
 let g:Powerline_symbols = 'compatible'
 

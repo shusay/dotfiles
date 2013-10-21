@@ -5,3 +5,5 @@ PATH=/usr/local/bin:/usr/local/sbin:/Users/shusay/.rbenv/shims:/Users/shusay/.rb
 export PATH
 
 export EDITOR=vim
+
+export TERM="xterm-256color"

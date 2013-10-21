@@ -1,4 +1,5 @@
 export PATH=$PATH:~/bin
+export TERM="xterm-256color"
 
 # Emacs
 alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs -nw'
@@ -31,6 +32,7 @@ alias v='vim'
 alias g='git'
 alias gl='git log'
 alias gst='git status'
+alias tmux="TERM=xterm-256color tmux"
 
 alias la='ls -a'
 alias ll='ls -l'
