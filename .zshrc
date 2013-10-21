@@ -46,6 +46,6 @@ alias be='bundle exec'
 
 # vivivit
 alias vivivit='cd ~/workspace/wannar4user'
-alias vivivit-admin='cd ~/workspace/vivivit-admin'
+alias vivivit-admin='cd ~/workspace/wannar4admin'
 alias vivivit-inc='cd ~/workspace/vivivitinc'
 alias vrbn='cd ~/workspace/vivivit_recruit_bn'
