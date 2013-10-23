@@ -8,3 +8,11 @@
 [core]
   excludesfile=~/.gitignore
   editor=vim
+
+[alias]
+  st = status
+  l = log
+  mst = checkout master
+  br = branch
+  co = checkout
+  cm = commit

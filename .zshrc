@@ -22,6 +22,12 @@ export LS_COLORS='di=34:ln=35:so=32:pi=33:ex=31:bd=46;34:cd=43;34:su=41;30:sg=46
 alias ls="ls -GF"
 alias gls="gls --color"
 
+# 自動cd&ls
+function cd(){
+  builtin cd $@
+  ls
+}
+
 # No beep
 setopt NO_BEEP
 
@@ -35,8 +41,6 @@ alias vpsa='ssh -p 10239 admin@133.242.191.118'
 # cmd
 alias v='vim'
 alias g='git'
-alias gl='git log'
-alias gst='git status'
 alias tmux="TERM=xterm-256color tmux"
 
 alias la='ls -a'
@@ -46,8 +50,6 @@ alias lal='ls -al'
 alias src='source'
 
 alias ..='cd ../'
-alias cda='cd apps'
-alias cdv='cd views'
 
 alias be='bundle exec'
 
