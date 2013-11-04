@@ -61,7 +61,13 @@ NeoBundle 'hail2u/vim-css3-syntax'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'taichouchou2/vim-javascript'
 NeoBundle 'tpope/vim-haml'
-NeoBundle 'cakebaker/scss-syntax.vim'
+NeoBundle 'AtsushiM/sass-compile.vim'
+
+" indent-color
+NeoBundle 'nathanaelkane/vim-indent-guides'
+
+" highspeed-grep
+NeoBundle 'rking/ag.vim'
 
 filetype plugin indent on
 
@@ -118,3 +124,16 @@ set noswapfile
 
 " 対応括弧表示
 set showmatch
+
+" vim-indent-guides設定
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_guide_size = 2
+" 自動カラーを無効にする
+let g:indent_guides_auto_colors=0
+" 奇数インデントのカラー
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=yellow
+" 偶数インデントのカラー
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=black
+" ハイライト色の変化の幅
+let g:indent_guides_color_change_percent = 20
+

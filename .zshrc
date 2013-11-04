@@ -56,6 +56,9 @@ alias be='bundle exec'
 # keyremap4macbook
 alias private='vim /Users/shusay/Library/"Application Support"/KeyRemap4MacBook/private.xml'
 
+# dotfiles
+alias dotfiles='cd ~/dotfiles'
+
 # vivivit
 alias vivivit='cd ~/workspace/wannar4user'
 alias vivivit-admin='cd ~/workspace/wannar4admin'
