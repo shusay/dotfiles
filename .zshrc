@@ -34,6 +34,8 @@ setopt NO_BEEP
 # PROMPT
 PROMPT='[%n@%m %C]%% '
 
+# ----- alias ----- #
+
 # VPS_alias
 alias vps='ssh -p 10239 shusay@133.242.191.118'
 alias vpsa='ssh -p 10239 admin@133.242.191.118'
@@ -51,7 +53,12 @@ alias src='source'
 
 alias ..='cd ../'
 
+# bundle
 alias be='bundle exec'
+alias bi='bundle install --path vendor/bundle'
+
+# rbenv
+alias re='rbenv exec'
 
 # keyremap4macbook
 alias private='vim /Users/shusay/Library/"Application Support"/KeyRemap4MacBook/private.xml'

@@ -61,7 +61,6 @@ NeoBundle 'hail2u/vim-css3-syntax'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'taichouchou2/vim-javascript'
 NeoBundle 'tpope/vim-haml'
-NeoBundle 'AtsushiM/sass-compile.vim'
 
 " indent-color
 NeoBundle 'nathanaelkane/vim-indent-guides'
@@ -136,4 +135,3 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=yellow
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=black
 " ハイライト色の変化の幅
 let g:indent_guides_color_change_percent = 20
-
