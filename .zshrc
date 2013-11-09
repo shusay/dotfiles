@@ -66,8 +66,12 @@ alias private='vim /Users/shusay/Library/"Application Support"/KeyRemap4MacBook/
 # dotfiles
 alias dotfiles='cd ~/dotfiles'
 
-# vivivit
+# projects
+## vivivit
 alias vivivit='cd ~/workspace/wannar4user'
 alias vivivit-admin='cd ~/workspace/wannar4admin'
 alias vivivit-inc='cd ~/workspace/vivivitinc'
 alias vrbn='cd ~/workspace/vivivit_recruit_bn'
+
+## shitmovie
+alias shit='cd ~/workspace/shitmovie'
