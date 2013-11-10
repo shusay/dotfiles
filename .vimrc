@@ -68,6 +68,9 @@ NeoBundle 'nathanaelkane/vim-indent-guides'
 " highspeed-grep
 NeoBundle 'rking/ag.vim'
 
+" NerdTree
+NeoBundle 'scrooloose/nerdtree'
+
 filetype plugin indent on
 
 " Installation Check
