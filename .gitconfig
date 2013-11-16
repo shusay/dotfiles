@@ -15,10 +15,17 @@
   mst = checkout master
   br = branch
   co = checkout
+  aa = add -A
   cm = commit
+  cmm = commit -m
+  origin = org
+  merge = merge --no-ff
+  pl = pull
+  ps = push
+
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
