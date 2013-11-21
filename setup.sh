@@ -25,6 +25,7 @@ for rfile in ${REMAP_FILE[@]}
 do
   if [ -a $HOME/Library/Application\ Support/KeyRemap4MacBook/$rfile ]; then
     cp -f $HOME/dotfiles/$rfile $HOME/Library/Application\ Support/KeyRemap4MacBook/
+    ln -s $HOME/Library/Application\ Support/KeyRemap4MacBook/$rfile $HOME/dotfiles/$rfile
   else
     echo "KeyRemap4MacBookがないよっと"
   fi
