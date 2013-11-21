@@ -17,3 +17,15 @@ do
     echo "シンボリックリンクを貼りました！: $file"
   fi
 done
+
+# private_xml
+REMAP_FILE=( private.xml )
+
+for rfile in ${REMAP_FILE[@]}
+do
+  if [ -a $HOME/Library/Application\ Support/KeyRemap4MacBook/$rfile ]; then
+    cp -f $HOME/dotfiles/$rfile $HOME/Library/Application\ Support/KeyRemap4MacBook/
+  else
+    echo "KeyRemap4MacBookがないよっと"
+  fi
+done

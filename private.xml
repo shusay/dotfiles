@@ -69,7 +69,19 @@
 			__KeyToKey__
 			KeyCode::X, ModifierFlag::EXTRA1,
 			KeyCode::JIS_COLON
-		</autogen>
+    </autogen>
+
+    <!-- $% -->
+    <autogen>
+      __KeyToKey__
+      KeyCode::C, ModifierFlag::EXTRA1,
+      KeyCode::KEY_5, ModifierFlag::SHIFT_L
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::V, ModifierFlag::EXTRA1,
+      KeyCode::KEY_4, ModifierFlag::SHIFT_L
+    </autogen>
 	</item>
 
 	<item>
@@ -213,12 +225,8 @@
 		<autogen>
 			--DoublePressModifier-- KeyCode::COMMAND_R, KeyCode::COMMAND_R,
 			KeyCode::ESCAPE
-		</autogen>
+    </autogen>
 
-		<autogen>
-			--DoublePressModifier-- KeyCode::JIS_EISUU, KeyCode::JIS_EISUU,
-			KeyCode::F10
-		</autogen>
 		<autogen>__KeyToKey__ KeyCode::JIS_COLON, ModifierFlag::SHIFT_L, KeyCode::JIS_UNDERSCORE</autogen>
 	</item>
 
