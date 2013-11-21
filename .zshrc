@@ -93,7 +93,7 @@ alias bi='bundle install --path vendor/bundle'
 alias re='rbenv exec'
 
 # keyremap4macbook
-alias private='vim /Users/shusay/Library/"Application Support"/KeyRemap4MacBook/private.xml'
+alias private='cd /Users/shusay/Library/"Application Support"/KeyRemap4MacBook/'
 
 # dotfiles
 alias dotfiles='cd ~/dotfiles'
