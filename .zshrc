@@ -1,6 +1,9 @@
 export PATH=$PATH:~/bin
 export TERM="xterm-256color"
 
+# antigen
+source ~/.zshrc.antigen
+
 # Emacs
 alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs -nw'
 
@@ -8,12 +11,17 @@ alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs -nw'
 if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
 
 # completion
+fpath=($(brew --prefix)/share/zsh/site-functions $fpath)
 autoload -U compinit
-compinit
+compinit -u
 zstyle ':completion:*:default' menu select=2
+
+# suggest
+setopt correct
 
 # COLORS
 # 名前で色を付けるようにする
+autoload -U colors && colors
 autoload colors
 zstyle ':completion:*' list-colors 'di=34' 'ln=35' 'so=32' 'ex=31' 'bd=46;34' 'cd=43;34' "${LS_COLORS}"
 export LSCOLORS=exfxcxdxbxegedabagacad
@@ -31,8 +39,32 @@ function cd(){
 # No beep
 setopt NO_BEEP
 
-# PROMPT
-PROMPT='[%n@%m %C]%% '
+# ----- prompt ----- #
+## vcs-info
+autoload -Uz vcs_info # load
+setopt prompt_subst
+
+## style
+zstyle ':vcs_info:*' enable git
+zstyle ':vcs_info:git:*' stagedstr "%F{136}!%f"
+zstyle ':vcs_info:git:*' unstagedstr "%F{160}+%f"
+zstyle ':vcs_info:git:*' formats " - %F{166}%b%f"
+
+## load
+precmd () { vcs_info } # call
+GPROMPT="${vcs_info_msg_0_}"
+ARROW="%F{33}%{ ➻  %}%f"
+
+## check directory unless git
+if [[ -z ${vcs_info_msg_0_} ]]; then
+  psvar[1]=""
+else
+  [[ -n "vcs_info_msg_0_" ]] && psvar=[1]=( "${vcs_info_msg_0_}" )
+fi
+
+## PROMPT
+PROMPT="%F{37}%{✇ %}%f%F{254}%#@%m%f %F{65}*%f %F{254}%~%f"$ARROW
+
 
 # ----- alias ----- #
 
