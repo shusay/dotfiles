@@ -1,6 +1,6 @@
 export LANG=ja_JP.UTF-8
 
-PATH=/usr/local/bin:/usr/local/sbin:/Users/$HOME/.rbenv/shims:/Users/$HOME/.rbenv/versions:/usr/bin:$PATH
+PATH=/usr/local/bin:/usr/local/sbin:$HOME/.rbenv/shims:$HOME/.rbenv/versions:/usr/bin:$PATH
 
 export PATH
 
