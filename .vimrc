@@ -1,6 +1,7 @@
 set nocompatible
 filetype plugin off
 
+" ------------------------------------- Neobundle
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
@@ -75,6 +76,7 @@ filetype plugin indent on
 
 " Installation Check
 NeoBundleCheck
+" ------------------------------------- Neobundle
 
 set shiftwidth=2 tabstop=2
 set expandtab
@@ -138,3 +140,6 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=yellow
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=black
 " ハイライト色の変化の幅
 let g:indent_guides_color_change_percent = 20
+
+" NERDTree's Keymap
+nmap <silent> <C-e> :NERDTreeToggle<CR>
