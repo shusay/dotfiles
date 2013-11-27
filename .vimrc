@@ -60,7 +60,8 @@ NeoBundle 'tyru/open-browser.vim'
 " design/client
 NeoBundle 'hail2u/vim-css3-syntax'
 NeoBundle 'kchmck/vim-coffee-script'
-NeoBundle 'taichouchou2/vim-javascript'
+NeoBundle 'pangloss/vim-javascript'
+NeoBundle 'jelera/vim-javascript-syntax'
 NeoBundle 'tpope/vim-haml'
 
 " indent-color
@@ -133,9 +134,9 @@ set showmatch
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_guide_size = 2
 " 自動カラーを無効にする
-let g:indent_guides_auto_colors=0
+" let g:indent_guides_auto_colors=0
 " 奇数インデントのカラー
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=yellow
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=14
 " 偶数インデントのカラー
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=black
 " ハイライト色の変化の幅
@@ -143,3 +144,11 @@ let g:indent_guides_color_change_percent = 20
 
 " NERDTree's Keymap
 nmap <silent> <C-e> :NERDTreeToggle<CR>
+
+" vimにcoffeeファイルタイプを認識させる
+au BufRead,BufNewFile,BufReadPre *.coffee   set filetype=coffee
+
+" インデントを設定
+autocmd FileType coffee     setlocal sw=2 sts=2 ts=2 et
+
+
