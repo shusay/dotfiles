@@ -25,6 +25,7 @@ NeoBundle 'Shougo/vimshell'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'Shougo/neosnippet'
+NeoBundle 'Shougo/vimfiler.vim'
 NeoBundle 'jpalardy/vim-slime'
 NeoBundle 'scrooloose/syntastic'
 "" javascript
@@ -134,9 +135,9 @@ set showmatch
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_guide_size = 2
 " 自動カラーを無効にする
-" let g:indent_guides_auto_colors=0
+let g:indent_guides_auto_colors=0
 " 奇数インデントのカラー
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=14
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=11
 " 偶数インデントのカラー
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=black
 " ハイライト色の変化の幅
@@ -150,5 +151,3 @@ au BufRead,BufNewFile,BufReadPre *.coffee   set filetype=coffee
 
 " インデントを設定
 autocmd FileType coffee     setlocal sw=2 sts=2 ts=2 et
-
-

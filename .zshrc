@@ -2,7 +2,7 @@ export PATH=$PATH:~/bin
 export TERM="xterm-256color"
 
 # antigen
-source ~/.zshrc.antigen
+source $HOME/.zshrc.antigen
 
 # Emacs
 alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs -nw'
@@ -63,7 +63,7 @@ else
 fi
 
 ## PROMPT
-PROMPT="%F{37}%{✇ %}%f%F{254}%#@%m%f %F{65}*%f %F{254}%~%f"$ARROW
+PROMPT="%F{37}%{❀ %}%f%F{254}%#@%m%f %F{65}*%f %F{254}%~%f"$ARROW
 
 
 # ----- alias ----- #
