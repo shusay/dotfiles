@@ -1,7 +1,10 @@
 set nocompatible
 filetype plugin off
 
-" ------------------------------------- Neobundle
+" ------------------------------------- "
+"  NeoBundle
+" ------------------------------------- "
+
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
@@ -78,7 +81,10 @@ filetype plugin indent on
 
 " Installation Check
 NeoBundleCheck
-" ------------------------------------- Neobundle
+
+" ------------------------------------- "
+"  VimSettings
+" ------------------------------------- "
 
 set shiftwidth=2 tabstop=2
 set expandtab
