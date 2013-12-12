@@ -168,3 +168,6 @@ au BufRead,BufNewFile,BufReadPre *.coffee   set filetype=coffee
 
 " インデントを設定
 autocmd FileType coffee     setlocal sw=2 sts=2 ts=2 et
+
+" バッファを切り替えてもundoの効力を失わない
+set hidden
