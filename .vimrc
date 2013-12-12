@@ -90,11 +90,18 @@ NeoBundleCheck
 "  VimSettings
 " ------------------------------------- "
 
+" tab
 set shiftwidth=2 tabstop=2
 set expandtab
 set smartindent
 set number
 autocmd BufWritePre * :%s/\s\+$//ge "保存時に行末の空白除去
+
+" backspace
+set backspace=indent,eol,start
+
+" mouse
+set mouse=a
 
 " powerline
 set t_Co=256
