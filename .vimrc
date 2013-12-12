@@ -67,6 +67,7 @@ NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'jelera/vim-javascript-syntax'
 NeoBundle 'tpope/vim-haml'
+NeoBundle 'cakebaker/scss-syntax.vim'
 
 " indent-color
 NeoBundle 'nathanaelkane/vim-indent-guides'
