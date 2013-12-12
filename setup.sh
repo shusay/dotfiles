@@ -24,9 +24,10 @@ REMAP_FILE=( private.xml )
 for rfile in ${REMAP_FILE[@]}
 do
   if [ -a $HOME/Library/Application\ Support/KeyRemap4MacBook/$rfile ]; then
-    cp -f $HOME/dotfiles/$rfile $HOME/Library/Application\ Support/KeyRemap4MacBook/
-    ln -s $HOME/Library/Application\ Support/KeyRemap4MacBook/$rfile $HOME/dotfiles/$rfile
+    rm -f $HOME/Library/Application\ Support/KeyRemap4MacBook/$rfile
+    ln -s $HOME/dotfiles/$rfile $HOME/Library/Application\ Support/KeyRemap4MacBook/$rfile
+    echo "$rfile のシンボリックリンク貼ったよ"
   else
-    echo "KeyRemap4MacBookがないよっと"
+    echo "KeyRemap4MacBookがないでござる"
   fi
 done

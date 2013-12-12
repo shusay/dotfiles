@@ -76,6 +76,10 @@ NeoBundle 'rking/ag.vim'
 
 " NerdTree
 NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'mbbill/undotree'
+
+" colorizer
+NeoBundle 'lilydjwg/colorizer'
 
 filetype plugin indent on
 
