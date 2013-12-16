@@ -4,6 +4,4 @@ PATH=/usr/local/bin:/usr/local/sbin:$HOME/.rbenv/shims:$HOME/.rbenv/versions:/us
 
 export PATH
 
-export EDITOR=vim
-
 export TERM="xterm-256color"

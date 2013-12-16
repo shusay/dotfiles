@@ -1,6 +1,12 @@
 export PATH=$PATH:~/bin
 export TERM="xterm-256color"
 
+# vim
+export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
+alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+alias v='vim'
+
 # antigen
 source $HOME/.zshrc.antigen
 
@@ -71,7 +77,6 @@ alias vps='ssh -p 10239 shusay@133.242.191.118'
 alias vpsa='ssh -p 10239 admin@133.242.191.118'
 
 # cmd
-alias v='vim'
 alias g='git'
 alias tmux="TERM=xterm-256color tmux"
 

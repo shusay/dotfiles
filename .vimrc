@@ -31,8 +31,10 @@ NeoBundle 'Shougo/neosnippet'
 NeoBundle 'Shougo/vimfiler.vim'
 NeoBundle 'jpalardy/vim-slime'
 NeoBundle 'scrooloose/syntastic'
+
 "" javascript
 NeoBundle 'jQuery'
+
 "" ruby
 NeoBundle 'vim-ruby/vim-ruby', {
             \ 'autoload' : {
@@ -46,8 +48,8 @@ NeoBundle 'Shougo/neocomplcache-rsense', {
             \ 'autoload' : {
             \     'filetypes' : ['ruby']
             \ }}
+
 "" Powerline
-NeoBundle 'alpaca-tc/alpaca_powertabline'
 NeoBundle 'Lokaltog/powerline', { 'rtp' : 'powerline/bindings/vim'}
 NeoBundle 'stephenmckinney/vim-solarized-powerline'
 "" Quickrun
