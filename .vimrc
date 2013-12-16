@@ -174,3 +174,6 @@ autocmd FileType coffee     setlocal sw=2 sts=2 ts=2 et
 
 " バッファを切り替えてもundoの効力を失わない
 set hidden
+
+" バックアップファイルを出力しないように
+set nobackup
