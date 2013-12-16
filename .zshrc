@@ -71,11 +71,6 @@ fi
 PROMPT='%F{37}%{❀ %}%f%F{254}%#@%m%f %F{65}*%f %F{254}%~%f%F{33}%{ ➻  %}%f'
 
 # ----- alias ----- #
-
-# VPS_alias
-alias vps='ssh -p 10239 shusay@133.242.191.118'
-alias vpsa='ssh -p 10239 admin@133.242.191.118'
-
 # cmd
 alias g='git'
 alias tmux="TERM=xterm-256color tmux"
