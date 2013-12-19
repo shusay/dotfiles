@@ -1,5 +1,5 @@
 # 導入手順
-+ rbenv/ruby-buildとかgccはいれとく
++ rbenv/ruby-buildとかgccとかMacVimはいれとく
 + brew install vim #pythonでコンパイルされている必要があるため
 + brew install reattach-to-user-namespace
 + antigenを$HOMEにclone
