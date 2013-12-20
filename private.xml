@@ -284,5 +284,22 @@
 		<autogen>__KeyToKey__ KeyCode::JIS_ATMARK, KeyCode::SLASH</autogen>
 		<autogen>__KeyToKey__ KeyCode::JIS_COLON, KeyCode::MINUS</autogen>
 		<autogen>__KeyToKey__ KeyCode::SLASH, KeyCode::COMMA</autogen>
-	</item>
+  </item>
+
+  <appdef>
+    <appname>iTERM2</appname>
+    <equal>com.googlecode.iterm2</equal>
+  </appdef>
+  <appdef>
+    <appname>MACVIM</appname>
+    <equal>org.vim.MacVim</equal>
+  </appdef>
+  <list>
+    <item>
+      <name>Leave Insert Mode with EISUU for Vim</name>
+      <identifier>private.vim_keybind_apps_esc_with_eisuu</identifier>
+      <only>iTERM2,TERMINAL,MACVIM</only>
+      <autogen>--KeyToKey-- KeyCode::ESCAPE, KeyCode::ESCAPE, KeyCode::JIS_EISUU</autogen>
+    </item>
+  </list>
 </root>
