@@ -177,3 +177,6 @@ set hidden
 
 " バックアップファイルを出力しないように
 set nobackup
+
+" コマンドラインの高さを1行に
+set cmdheight=1
