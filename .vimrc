@@ -84,6 +84,9 @@ NeoBundle 'mbbill/undotree'
 " colorizer
 NeoBundle 'lilydjwg/colorizer'
 
+" git
+NeoBundle 'tpope/vim-fugitive'
+
 filetype plugin indent on
 
 " Installation Check
