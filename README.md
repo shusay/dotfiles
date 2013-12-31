@@ -3,6 +3,7 @@
 + brew install vim #pythonでコンパイルされている必要があるため
 + brew install reattach-to-user-namespace
 + antigenを$HOMEにclone
++ mkdir ~/.antigen
 + mv antigen/ .antigen/
 + ~/.vim/bundle を作成
 + ~/.vim/bundle/にneobundle.vimをclone
