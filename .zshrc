@@ -105,4 +105,5 @@ alias vrbn='cd ~/workspace/vivivit_recruit_bn'
 ## shitmovie
 alias shit='cd ~/workspace/shitmovie'
 
-
+# rをR言語向けに確保
+disable r
