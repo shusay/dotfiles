@@ -18,8 +18,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
 
 # completion
 fpath=($(brew --prefix)/share/zsh/site-functions $fpath)
-autoload -U compinit
-compinit -u
+autoload -U compinit && compinit
 zstyle ':completion:*:default' menu select=2
 
 # suggest
@@ -105,3 +104,5 @@ alias vrbn='cd ~/workspace/vivivit_recruit_bn'
 
 ## shitmovie
 alias shit='cd ~/workspace/shitmovie'
+
+
