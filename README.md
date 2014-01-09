@@ -1,10 +1,10 @@
 # 導入手順
-+ rbenv/ruby-buildとかgccとかMacVimはいれとく
++ rbenv/ruby-buildとかgccとかMacVimとかtmuxはいれとく
 + brew install vim #pythonでコンパイルされている必要があるため
 + brew install reattach-to-user-namespace
 + antigenを$HOMEにclone
-+ mkdir ~/.antigen
-+ mv antigen/ .antigen/
++ mkdir ~/.zsh
++ mv antigen/ .zsh/
 + ~/.vim/bundle を作成
 + ~/.vim/bundle/にneobundle.vimをclone
 + ~/にdotfilesをclone
