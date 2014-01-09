@@ -40,31 +40,35 @@ function cd(){
   ls
 }
 
+# cdなしでディレクトリ移動、なおかつどこからでも移動できるように
+setopt AUTO_CD
+cdpath=(.. ~ ~/src)
+
 # No beep
 setopt NO_BEEP
 
 # ----- prompt ----- #
 ## vcs-info
-autoload -Uz vcs_info # load
-setopt prompt_subst
+#autoload -Uz vcs_info # load
+#setopt prompt_subst
 
 ## style
-zstyle ':vcs_info:*' enable git
-zstyle ':vcs_info:git:*' stagedstr "%F{136}!%f"
-zstyle ':vcs_info:git:*' unstagedstr "%F{160}+%f"
-zstyle ':vcs_info:git:*' formats " - %F{166}%b%f"
+#zstyle ':vcs_info:*' enable git
+#zstyle ':vcs_info:git:*' stagedstr "%F{136}!%f"
+#zstyle ':vcs_info:git:*' unstagedstr "%F{160}+%f"
+#zstyle ':vcs_info:git:*' formats " - %F{166}%b%f"
 
 ## load
-precmd () { vcs_info } # call
-GPROMPT="${vcs_info_msg_0_}"
-ARROW="%F{33}%{ ➻  %}%f"
+#precmd () { vcs_info } # call
+#GPROMPT="${vcs_info_msg_0_}"
+#ARROW="%F{33}%{ ➻  %}%f"
 
 ## check directory unless git
-if [[ -z ${vcs_info_msg_0_} ]]; then
-  psvar[1]=""
-else
-  [[ -n "vcs_info_msg_0_" ]] && psvar=[1]=( "${vcs_info_msg_0_}" )
-fi
+#if [[ -z ${vcs_info_msg_0_} ]]; then
+#  psvar[1]=""
+#else
+#  [[ -n "vcs_info_msg_0_" ]] && psvar=[1]=( "${vcs_info_msg_0_}" )
+#fi
 
 ## PROMPT
 PROMPT='%F{37}%{❀ %}%f%F{254}%#@%m%f %F{65}*%f %F{254}%~%f%F{33}%{ ➻  %}%f'
