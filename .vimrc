@@ -100,8 +100,13 @@ NeoBundleCheck
 set shiftwidth=2 tabstop=2
 set expandtab
 set smartindent
+
+" 行番号
 set number
-autocmd BufWritePre * :%s/\s\+$//ge "保存時に行末の空白除去
+set cursorline
+
+" 保存時に行末の空白除去
+autocmd BufWritePre * :%s/\s\+$//ge
 
 " backspace
 set backspace=indent,eol,start
