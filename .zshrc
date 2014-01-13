@@ -66,8 +66,8 @@ zstyle ':vcs_info:*' max-exports 3
 zstyle ':vcs_info:*' enable git svn hg bzr
 # 標準のフォーマット(git 以外で使用)
 # misc(%m) は通常は空文字列に置き換えられる
-zstyle ':vcs_info:*' formats '[%b]'
-zstyle ':vcs_info:*' actionformats '[%b]' '%m' '<!%a>'
+zstyle ':vcs_info:*' formats '❃ %b'
+zstyle ':vcs_info:*' actionformats '❃ %b' '%m' '❃ %a'
 zstyle ':vcs_info:(svn|bzr):*' branchformat '%b:r%r'
 zstyle ':vcs_info:bzr:*' use-simple true
 
@@ -75,8 +75,8 @@ zstyle ':vcs_info:bzr:*' use-simple true
 if is-at-least 4.3.10; then
     # git 用のフォーマット
     # git のときはステージしているかどうかを表示
-    zstyle ':vcs_info:git:*' formats '[%b]' '%c%u %m'
-    zstyle ':vcs_info:git:*' actionformats '[%b]' '%c%u %m' '<!%a>'
+    zstyle ':vcs_info:git:*' formats '❃ %b' '%c%u %m'
+    zstyle ':vcs_info:git:*' actionformats '❃ %b' '%c%u %m' '❃ %a'
     zstyle ':vcs_info:git:*' check-for-changes true
     zstyle ':vcs_info:git:*' stagedstr "+"    # %c で表示する文字列
     zstyle ':vcs_info:git:*' unstagedstr "-"  # %u で表示する文字列
@@ -225,7 +225,7 @@ function _update_vcs_info_msg() {
     RPROMPT="$prompt"
 }
 add-zsh-hook precmd _update_vcs_info_msg
-#PROMPT="%F{37}%{❀ %}%f%F{254}%#@%m%f %F{65}*%f %F{254}%c%f%F{33}%f%{ ➻  %}%f"
+PROMPT='%F{37}✬ %f%F{254}%#@%m%f%F{65} * %f'$RPROMPT'%F{254}%c%f%F{33}%f ➧ %f'
 # ----- alias ----- #
 # cmd
 alias g='git'

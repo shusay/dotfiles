@@ -114,6 +114,9 @@ set backspace=indent,eol,start
 " mouse
 set mouse=a
 
+" Vimを使ってくれてありがとう、がうざい
+set notitle
+
 " powerline
 set t_Co=256
 set t_ut=
