@@ -1,6 +1,12 @@
 # 導入手順
++ シェルをzshに変更
++ brew install zsh
++ sudo vi /etc/shells
++ 一番下に /usr/local/bin/zsh を追加
++ chpass /use/local/bin/zsh
++ chpass で確認
 + rbenv/ruby-buildとかgccとかMacVimとかtmuxはいれとく
-+ brew install vim #pythonでコンパイルされている必要があるため
++ brew install vim #MacVimを使わない場合のみ。tmuxやpowerlineを使用する際に、pythonでコンパイルされたvimが必要になるため
 + brew install reattach-to-user-namespace
 + antigenを$HOMEにclone
 + mkdir ~/.zsh
@@ -13,5 +19,5 @@
 + ../
 + ./setup.sh
 + exec $SHELL
-+ ほいでvimを開く
++ vimを開く
 + 以上
