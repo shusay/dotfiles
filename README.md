@@ -1,16 +1,17 @@
 # 導入手順
-+ シェルをzshに変更
++ ログインシェルをzshに変更
 + brew install zsh
 + sudo vi /etc/shells
 + 一番下に /usr/local/bin/zsh を追加
 + chpass /use/local/bin/zsh
 + chpass で確認
-+ rbenv/ruby-buildとかgccとかMacVimとかtmuxはいれとく
++ rbenv, ruby-build, gcc(commandlinetool), MacVim,tmuxは最低いれとく
 + brew install vim #MacVimを使わない場合のみ。tmuxやpowerlineを使用する際に、pythonでコンパイルされたvimが必要になるため
 + brew install reattach-to-user-namespace
 + antigenを$HOMEにclone
 + mkdir ~/.zsh
-+ mv antigen/ .zsh/
++ cd ~/.zsh
++ antigen, zsh-notifyをclone
 + ~/.vim/bundle を作成
 + ~/.vim/bundle/にneobundle.vimをclone
 + ~/にdotfilesをclone
