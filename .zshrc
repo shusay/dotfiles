@@ -262,6 +262,9 @@ alias vrbn='cd ~/workspace/vivivit_recruit_bn'
 ## shitmovie
 alias shit='cd ~/workspace/shitmovie'
 
+## kohankaku
+alias kohan='cd /Applications/MAMP/htdocs'
+
 # rをR言語向けに確保
 disable r
 
