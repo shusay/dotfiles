@@ -9,20 +9,22 @@ tap phinze/hombrew-cask || true
 install brew-cask
 
 # brew install Applications
-brew install openssl || true
-brew install readline || true
-brew install reattach-to-user-namespace || true
-brew install zsh || true
-brew install git || true
-brew install wget || true
-brew install cmake || true
-brew install imagemagick || true
-brew install tmux || true
-brew install curl || true
-brew install ag || true
-brew install ruby-build || true
-brew install rbenv || true
-brew install mysql || true
+install openssl || true
+install readline || true
+install reattach-to-user-namespace || true
+install zsh || true
+install git || true
+install wget || true
+install cmake || true
+install imagemagick || true
+install tmux || true
+install curl || true
+install ag || true
+install ruby-build || true
+install rbenv || true
+install mysql || true
+install vim || true
+install hub || true
 
 # caks install Applications
 cask install iterm2 || true
