@@ -1,4 +1,6 @@
 # 導入手順
++ Xcodeをインストール
++ Homebrewをインストール http://brew.sh/
 + ログインシェルをzshに変更
 + brew install zsh
 + sudo vi /etc/shells
