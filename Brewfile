@@ -1,9 +1,6 @@
 # update Homebrew
 update
 
-# upgrade Fomula
-upgrade
-
 # homebrew-cask
 tap phinze/hombrew-cask || true
 install brew-cask
