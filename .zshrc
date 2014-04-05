@@ -256,14 +256,14 @@ alias dotfiles='cd ~/dotfiles'
 ## vivivit
 alias vivivit='cd ~/workspace/wannar4user'
 alias vivivit-admin='cd ~/workspace/wannar4admin'
-alias vivivit-inc='cd ~/workspace/vivivitinc'
+alias wcalc='cd ~/workspace/web-calc'
 alias vrbn='cd ~/workspace/vivivit_recruit_bn'
 
 ## shitmovie
 alias shit='cd ~/workspace/shitmovie'
 
-## kohankaku
-alias kohan='cd /Applications/MAMP/htdocs'
+## vivivit-inc
+alias inc='cd /Applications/MAMP/htdocs'
 
 # rをR言語向けに確保
 disable r
