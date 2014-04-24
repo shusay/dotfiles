@@ -257,7 +257,7 @@ alias dotfiles='cd ~/dotfiles'
 alias vivivit='cd ~/workspace/wannar4user'
 alias vivivit-admin='cd ~/workspace/wannar4admin'
 alias wcalc='cd ~/workspace/web-calc'
-alias vrbn='cd ~/workspace/vivivit_recruit_bn'
+alias vivivitinc='cd ~/workspace/lamb_of_goat'
 
 ## shitmovie
 alias shit='cd ~/workspace/shitmovie'
