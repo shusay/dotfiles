@@ -258,6 +258,7 @@ alias vivivit='cd ~/workspace/wannar4user'
 alias vivivit-admin='cd ~/workspace/wannar4admin'
 alias wcalc='cd ~/workspace/web-calc'
 alias vivivitinc='cd ~/workspace/lamb_of_goat'
+alias intern='cd ~/workspace/internship_16summer'
 
 ## shitmovie
 alias shit='cd ~/workspace/shitmovie'

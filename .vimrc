@@ -191,3 +191,6 @@ set nobackup
 
 " コマンドラインの高さを1行に
 set cmdheight=1
+
+" 機種依存文字に幅を振る
+set ambiwidth=double
