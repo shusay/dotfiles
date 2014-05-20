@@ -263,7 +263,7 @@ alias vivivitinc='cd ~/workspace/lamb_of_goat'
 alias shit='cd ~/workspace/shitmovie'
 
 ## vivivit-inc
-alias inc='cd /Applications/MAMP/htdocs'
+alias inc='cd /Applications/MAMP/htdocs/vivivit/'
 
 # rをR言語向けに確保
 disable r
@@ -272,3 +272,6 @@ disable r
 source ~/.zsh/zsh-notify/notify.plugin.zsh
 export SYS_NOTIFIER="/usr/local/bin/terminal-notifier"
 export NOTIFY_COMMAND_COMPLETE_TIMEOUT=10
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
