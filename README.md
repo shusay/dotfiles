@@ -46,5 +46,4 @@
 + iTermに戻り、`⌘+,`を押して環境設定画面を開く
 + Profiles -> [設定したいプロファイル] -> Colors に移動
 + [Load Presets] セレクトボックスから、Import を選びます
-+ 
 + 以上
