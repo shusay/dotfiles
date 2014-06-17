@@ -39,4 +39,12 @@
 + `./setup.sh`
 + `exec $SHELL`
 + `vim`
+
+### terminalとvimの色をかっこ良く
++ https://code.google.com/p/iterm2/wiki/ColorGallery にアクセス
++ **Solarized Dark**と**Solarized Light**のリンクを右クリックし、「リンク先を別名で保存」
++ iTermに戻り、`⌘+,`を押して環境設定画面を開く
++ Profiles -> [設定したいプロファイル] -> Colors に移動
++ [Load Presets] セレクトボックスから、Import を選びます
++ 
 + 以上
