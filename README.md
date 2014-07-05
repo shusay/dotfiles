@@ -14,7 +14,7 @@
 1. `brew install zsh`
 - `sudo vi /etc/shells`
 - 一番下に `/usr/local/bin/zsh` を追加
-- `chpass /use/local/bin/zsh`
+- `chsh -s /use/local/bin/zsh`
 - `chpass`でzshが有効になっていることを確認
 
 ### 各種ツールのインストール
