@@ -18,7 +18,7 @@
 - `chpass`でzshが有効になっていることを確認
 
 ### 各種ツールのインストール
-`brew install git rbenv ruby-build vim tmux reattach-to-user-namespace cmake curl imagemagick tig readline wget zsh terminal-notifier`
+`brew install git rbenv ruby-build vim openssl tmux reattach-to-user-namespace cmake curl imagemagick tig readline wget zsh terminal-notifier`
 
 ### 必要なリポジトリをhomeにclone
 1. `mkdir ~/.zsh`
