@@ -14,11 +14,11 @@
 1. `brew install zsh`
 - `sudo vi /etc/shells`
 - 一番下に `/usr/local/bin/zsh` を追加
-- `chpass /use/local/bin/zsh`
+- `chsh -s /use/local/bin/zsh`
 - `chpass`でzshが有効になっていることを確認
 
 ### 各種ツールのインストール
-`brew install git rbenv ruby-build vim tmux reattach-to-user-namespace cmake curl imagemagick tig readline wget zsh terminal-notifier`
+`brew install git rbenv ruby-build vim openssl tmux reattach-to-user-namespace cmake curl imagemagick tig readline wget zsh terminal-notifier ag`
 
 ### 必要なリポジトリをhomeにclone
 1. `mkdir ~/.zsh`
