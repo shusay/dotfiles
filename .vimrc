@@ -31,6 +31,7 @@ NeoBundle 'Shougo/neosnippet'
 NeoBundle 'Shougo/vimfiler.vim'
 NeoBundle 'jpalardy/vim-slime'
 NeoBundle 'scrooloose/syntastic'
+NeoBundle 'alvinhuynh/vim-syntastic-scss-lint'
 
 "" javascript
 NeoBundle 'jQuery'
