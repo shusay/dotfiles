@@ -31,7 +31,7 @@ NeoBundle 'Shougo/neosnippet'
 NeoBundle 'Shougo/vimfiler.vim'
 NeoBundle 'jpalardy/vim-slime'
 NeoBundle 'scrooloose/syntastic'
-NeoBundle 'alvinhuynh/vim-syntastic-scss-lint'
+" NeoBundle 'alvinhuynh/vim-syntastic-scss-lint'
 
 "" javascript
 NeoBundle 'jQuery'
@@ -178,6 +178,8 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=11
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=black
 " ハイライト色の変化の幅
 let g:indent_guides_color_change_percent = 20
+" scss-lintの有効化
+let g:syntastic_scss_checkers = ['scss_lint']
 
 " NERDTree's Keymap
 nmap <silent> <C-e> :NERDTreeToggle<CR>
