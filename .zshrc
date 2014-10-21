@@ -254,8 +254,8 @@ alias dotfiles='cd ~/dotfiles'
 
 # projects
 ## vivivit
-alias vivivit='cd ~/workspace/vivivit'
-alias expv='cd ~/workspace/exp_vivivit'
+alias vivivitn='cd ~/workspace/vivivit'
+alias vivivite='cd ~/workspace/exp_vivivit'
 alias wcalc='cd ~/workspace/web-calc'
 alias vivivitinc='cd ~/workspace/lamb_of_goat'
 
