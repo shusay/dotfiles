@@ -75,9 +75,6 @@ NeoBundle 'tpope/vim-haml'
 NeoBundle 'cakebaker/scss-syntax.vim'
 NeoBundle 'slim-template/vim-slim.git'
 
-" indent-color
-NeoBundle 'Yggdroot/indentLine'
-
 " highspeed-grep
 NeoBundle 'rking/ag.vim'
 
@@ -132,9 +129,6 @@ set ttyfast
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
 let g:html_indent_inctags = "html,body,head"
-
-" indentLine
-let g:indentLine_faster = 1
 
 " powerline
 set t_Co=256
