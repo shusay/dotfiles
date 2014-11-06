@@ -65,6 +65,8 @@ NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'tyru/open-browser.vim'
 
 " design/client
+NeoBundle 'vim-scripts/indenthtml.vim'
+NeoBundle 'othree/html5.vim'
 NeoBundle 'hail2u/vim-css3-syntax'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'pangloss/vim-javascript'
@@ -74,7 +76,7 @@ NeoBundle 'cakebaker/scss-syntax.vim'
 NeoBundle 'slim-template/vim-slim.git'
 
 " indent-color
-NeoBundle 'nathanaelkane/vim-indent-guides'
+NeoBundle 'Yggdroot/indentLine'
 
 " highspeed-grep
 NeoBundle 'rking/ag.vim'
@@ -122,6 +124,18 @@ set mouse=a
 " Vimを使ってくれてありがとう、がうざい
 set notitle
 
+" スクロールが遅い
+set lazyredraw
+set ttyfast
+
+" htmlのインデントが深いと遅くなる対策
+let g:html_indent_script1 = "inc"
+let g:html_indent_style1 = "inc"
+let g:html_indent_inctags = "html,body,head"
+
+" indentLine
+let g:indentLine_faster = 1
+
 " powerline
 set t_Co=256
 set t_ut=
@@ -166,21 +180,6 @@ set noswapfile
 
 " 対応括弧表示
 set showmatch
-
-" vim-indent-guides設定
-let g:indent_guides_enable_on_vim_startup = 1
-let g:indent_guides_guide_size = 2
-" 自動カラーを無効にする
-let g:indent_guides_auto_colors=0
-" 奇数インデントのカラー
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=11
-" 偶数インデントのカラー
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=black
-" ハイライト色の変化の幅
-let g:indent_guides_color_change_percent = 20
-" scss-lintの有効化
-"" lint重い
-" let g:syntastic_scss_checkers = ['scss_lint']
 
 " NERDTree's Keymap
 nmap <silent> <C-e> :NERDTreeToggle<CR>
