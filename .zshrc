@@ -253,17 +253,19 @@ alias private='cd $HOME/Library/Application\ Support/KeyRemap4MacBook/'
 alias dotfiles='cd ~/dotfiles'
 
 # projects
-## vivivit
+## ng_vivivit
 alias vivin='cd ~/workspace/vivivit'
-alias vivie='cd ~/workspace/exp_vivivit'
-alias wcalc='cd ~/workspace/web-calc'
-alias vivivitinc='cd ~/workspace/lamb_of_goat'
 
-## shitmovie
-alias shit='cd ~/workspace/shitmovie'
+## exp_vivivit
+alias vivie='cd ~/workspace/exp_vivivit'
 
 ## vivivit-inc
 alias inc='cd /Applications/MAMP/htdocs/vivivit/'
+alias vivivitinc='cd ~/workspace/lamb_of_goat'
+
+## another projects
+alias wcalc='cd ~/workspace/web-calc'
+alias sample='cd ~/workspace/rails_projects'
 
 # rをR言語向けに確保
 disable r
