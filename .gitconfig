@@ -34,3 +34,6 @@
   generic = G move-last-line
 [heroku]
 	account = vivivijob
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
