@@ -88,6 +88,7 @@ NeoBundle 'lilydjwg/colorizer'
 
 " git
 NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'gregsexton/gitv'
 
 filetype plugin indent on
 

@@ -259,6 +259,9 @@ alias vivin='cd ~/workspace/vivivit'
 ## exp_vivivit
 alias vivie='cd ~/workspace/exp_vivivit'
 
+## hataraku_vivivit
+alias htrk='cd ~/workspace/hataraku_vivivit'
+
 ## vivivit-inc
 alias inc='cd /Applications/MAMP/htdocs/vivivit/'
 alias vivivitinc='cd ~/workspace/lamb_of_goat'
