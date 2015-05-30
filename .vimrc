@@ -51,6 +51,9 @@ NeoBundle 'Shougo/neocomplcache-rsense', {
             \     'filetypes' : ['ruby']
             \ }}
 
+"" PHP
+NeoBundle 'StanAngeloff/php.vim'
+
 "" Powerline
 NeoBundle 'Lokaltog/powerline', { 'rtp' : 'powerline/bindings/vim'}
 NeoBundle 'stephenmckinney/vim-solarized-powerline'
@@ -75,6 +78,11 @@ NeoBundle 'jelera/vim-javascript-syntax'
 NeoBundle 'tpope/vim-haml'
 NeoBundle 'cakebaker/scss-syntax.vim'
 NeoBundle 'slim-template/vim-slim.git'
+NeoBundle 'hail2u/vim-css3-syntax'
+NeoBundle 'digitaltoad/vim-jade'
+
+" editor config
+NeoBundle 'editorconfig/editorconfig-vim'
 
 " highspeed-grep
 NeoBundle 'rking/ag.vim'

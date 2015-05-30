@@ -260,7 +260,8 @@ alias vivin='cd ~/workspace/vivivit'
 alias vivie='cd ~/workspace/exp_vivivit'
 
 ## hataraku_vivivit
-alias htrk='cd ~/workspace/hataraku_vivivit'
+alias dhtrk='cd ~/workspace/hataraku_vivivit/vccw/www/wordpress/wp-content/themes/hatarakudesktop'
+alias shtrk='cd ~/workspace/hataraku_vivivit/vccw/www/wordpress/wp-content/themes/hatarakusp'
 
 ## vivivit-inc
 alias inc='cd /Applications/MAMP/htdocs/vivivit/'
@@ -269,6 +270,8 @@ alias vivivitinc='cd ~/workspace/lamb_of_goat'
 ## another projects
 alias wcalc='cd ~/workspace/web-calc'
 alias sample='cd ~/workspace/rails_projects'
+
+alias sshtrk="sudo ssh -i ~/.ssh/hataraku.pem ec2-user@52.69.25.21"
 
 # rをR言語向けに確保
 disable r
