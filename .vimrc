@@ -80,6 +80,8 @@ NeoBundle 'cakebaker/scss-syntax.vim'
 NeoBundle 'slim-template/vim-slim.git'
 NeoBundle 'hail2u/vim-css3-syntax'
 NeoBundle 'digitaltoad/vim-jade'
+NeoBundle 'plasticboy/vim-markdown'
+NeoBundle 'stephpy/vim-yaml'
 
 " editor config
 NeoBundle 'editorconfig/editorconfig-vim'
