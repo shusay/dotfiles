@@ -6,32 +6,27 @@ filetype plugin off
 " ------------------------------------- "
 
 if has('vim_starting')
+  if &compatible
+    set nocompatible
+  endif
+
   set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
-call neobundle#rc(expand('~/.vim/bundle/'))
+call neobundle#begin(expand('~/.vim/bundle/'))
 
-" Let NeoBundleFetch
 NeoBundleFetch 'Shougo/neobundle.vim'
-
+"" Powerline
+NeoBundle 'Lokaltog/powerline', { 'rtp' : 'powerline/bindings/vim'}
+NeoBundle 'stephenmckinney/vim-solarized-powerline'
 " Plugin
-NeoBundle 'Shougo/vimproc', {
-      \ 'build' : {
-      \   'windows' : 'make -f make_mingw32.mak',
-      \   'cygwin' : 'make -f make_cygwin.mak',
-      \   'mac' : 'make -f make_mac.mak',
-      \   'unix' : 'make -f make_unix.mak',
-      \   },
-      \ }
 NeoBundle 'VimClojure'
 NeoBundle 'Shougo/vimshell'
-NeoBundle 'Shougo/unite.vim'
-NeoBundle 'Shougo/neocomplcache'
+NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'Shougo/neosnippet'
-NeoBundle 'Shougo/vimfiler.vim'
-NeoBundle 'jpalardy/vim-slime'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'othree/javascript-libraries-syntax.vim'
+NeoBundle 'elzr/vim-json'
 " NeoBundle 'alvinhuynh/vim-syntastic-scss-lint'
 
 "" javascript
@@ -54,9 +49,7 @@ NeoBundle 'Shougo/neocomplcache-rsense', {
 "" PHP
 NeoBundle 'StanAngeloff/php.vim'
 
-"" Powerline
-NeoBundle 'Lokaltog/powerline', { 'rtp' : 'powerline/bindings/vim'}
-NeoBundle 'stephenmckinney/vim-solarized-powerline'
+
 "" Quickrun
 NeoBundle 'thinca/vim-quickrun'
 
@@ -76,12 +69,13 @@ NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'jelera/vim-javascript-syntax'
 NeoBundle 'tpope/vim-haml'
+NeoBundle 'slim-template/vim-slim'
 NeoBundle 'cakebaker/scss-syntax.vim'
-NeoBundle 'slim-template/vim-slim.git'
 NeoBundle 'hail2u/vim-css3-syntax'
 NeoBundle 'digitaltoad/vim-jade'
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'stephpy/vim-yaml'
+NeoBundle 'toyamarinyon/vim-swift'
 
 " editor config
 NeoBundle 'editorconfig/editorconfig-vim'
@@ -100,9 +94,15 @@ NeoBundle 'lilydjwg/colorizer'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'gregsexton/gitv'
 
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/vimfiler.vim'
+" call neobundle#load_toml('~/.vim/neobundle.toml')
+" call neobundle#load_toml('~/.vim/neobundlelazy.toml', {'lazy' : 1} )
+
+call neobundle#end()
+
 filetype plugin indent on
 
-" Installation Check
 NeoBundleCheck
 
 " ------------------------------------- "

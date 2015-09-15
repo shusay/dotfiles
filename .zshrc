@@ -276,6 +276,9 @@ alias sshtrk="sudo ssh -i ~/.ssh/hataraku.pem ec2-user@52.69.25.21"
 # rをR言語向けに確保
 disable r
 
+# direnv
+eval "$(direnv hook zsh)"
+
 # zsh-notify
 source ~/.zsh/zsh-notify/notify.plugin.zsh
 export SYS_NOTIFIER="/usr/local/bin/terminal-notifier"
