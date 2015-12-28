@@ -10,7 +10,6 @@
 - ターミナルで次のコマンドを入力 `ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"`
 
 #### ログインシェルをzshに変更
-
 1. `brew install zsh`
 - `sudo vi /etc/shells`
 - 一番下に `/usr/local/bin/zsh` を追加
@@ -18,7 +17,7 @@
 - `chpass`でzshが有効になっていることを確認
 
 ### 各種ツールのインストール
-`brew install git rbenv ruby-build vim openssl tmux reattach-to-user-namespace cmake curl imagemagick tig readline wget zsh terminal-notifier ag`
+`brew install git rbenv ruby-build vim openssl tmux reattach-to-user-namespace cmake curl imagemagick tig readline wget zsh terminal-notifier ag node jenkins zsh-completions zsh-syntax-highlighting mysql elasticsearch direnv`
 
 ### 必要なリポジトリをhomeにclone
 1. `mkdir ~/.zsh`

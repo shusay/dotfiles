@@ -1,5 +1,5 @@
-export PATH=$PATH:~/bin
-export TERM="xterm-256color"
+# direnv
+eval "$(direnv hook zsh)"
 
 # vim
 export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
@@ -276,13 +276,22 @@ alias sshtrk="sudo ssh -i ~/.ssh/hataraku.pem ec2-user@52.69.25.21"
 # rをR言語向けに確保
 disable r
 
-# direnv
-eval "$(direnv hook zsh)"
-
 # zsh-notify
 source ~/.zsh/zsh-notify/notify.plugin.zsh
 export SYS_NOTIFIER="/usr/local/bin/terminal-notifier"
 export NOTIFY_COMMAND_COMPLETE_TIMEOUT=10
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+# ghq
+function peco-src () {
+  local selected_dir=$(ghq list -p | peco --query "$LBUFFER")
+  if [ -n "$selected_dir" ]; then
+    BUFFER="cd ${selected_dir}"
+    zle accept-line
+  fi
+  zle clear-screen
+}
+zle -N peco-src
+bindkey '^]' peco-src
+
+HISTSIZE=1000
+HISTTIMEFORMAT='%Y/%m/%d %H:%M:%S'

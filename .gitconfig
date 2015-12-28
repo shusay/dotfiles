@@ -37,3 +37,7 @@
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
+[ghq]
+  root = ~/src
+[url "git@github.com:"]
+	insteadOf = https://github.com/

@@ -1,11 +1,11 @@
 export LANG=ja_JP.UTF-8
-
-export NODE_PATH=/usr/local/lib/node_modules
-
-NPM_PATH=/usr/local/bin/npm
-
-PATH=/usr/local/bin:/usr/local/sbin:$HOME/.rbenv/shims:$HOME/.rbenv/versions:/usr/bin:$NPM_PATH:$NODE_PATH:$PATH
-
-export PATH
-
 export TERM="xterm-256color"
+
+BASICPATH=/usr/local/bin:/usr/local/sbin:/usr/sbin:/usr/bin
+RBENV=$HOME/.rbenv/shims:$HOME/.rbenv/versions
+HEROKU=/usr/local/heroku/bin
+NODEPATH=$HOME/.nodebrew/current/bin
+GOPATH=$HOME
+GHQPATH=$GOPATH/bin
+
+export PATH=$BASICPATH:$RBENV:$HEROKU:$NODEPATH:$GOPATH:$GHQPATH:$PATH

@@ -24,6 +24,7 @@ NeoBundle 'VimClojure'
 NeoBundle 'Shougo/vimshell'
 NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'Shougo/neosnippet'
+NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'othree/javascript-libraries-syntax.vim'
 NeoBundle 'elzr/vim-json'
@@ -48,7 +49,6 @@ NeoBundle 'Shougo/neocomplcache-rsense', {
 
 "" PHP
 NeoBundle 'StanAngeloff/php.vim'
-
 
 "" Quickrun
 NeoBundle 'thinca/vim-quickrun'
@@ -76,6 +76,7 @@ NeoBundle 'digitaltoad/vim-jade'
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'stephpy/vim-yaml'
 NeoBundle 'toyamarinyon/vim-swift'
+NeoBundle 'mattn/emmet-vim'
 
 " editor config
 NeoBundle 'editorconfig/editorconfig-vim'
@@ -198,6 +199,7 @@ autocmd FileType coffee     setlocal sw=2 sts=2 ts=2 et
 
 " バッファを切り替えてもundoの効力を失わない
 set hidden
+set noundofile
 
 " バックアップファイルを出力しないように
 set nobackup
@@ -207,3 +209,25 @@ set cmdheight=1
 
 " 機種依存文字に幅を振る
 set ambiwidth=double
+
+set directory=~/.vim/tmp
+set backupdir=~/.vim/tmp
+set undodir=~/.vim/tmp
+
+" Vim-jsonのダブルクォート非表示を無効化
+let g:vim_json_syntax_conceal = 0
+
+" Neocomplet
+let g:neocomplete#enable_at_startup = 1
+let g:quickrun_config = {'*': {'hook/time/enable': '1'},}
+
+"" lint
+let g:syntastic_mode_map = { 'mode': 'passive',
+                           \ 'active_filetypes': ['ruby', 'javascript', 'php', 'jade', 'haml', 'slim', 'scss', 'sass'],
+                           \ 'passive_filetypes': []}
+" vim-indent-guides
+let g:indent_guides_auto_colors=0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd   ctermbg=232
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven  ctermbg=234
+let g:indent_guides_enable_on_vim_startup=1
+let g:indent_guides_guide_size=1
