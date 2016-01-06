@@ -17,7 +17,11 @@
 - `chpass`でzshが有効になっていることを確認
 
 ### 各種ツールのインストール
-`brew install git rbenv ruby-build vim openssl tmux reattach-to-user-namespace cmake curl imagemagick tig readline wget zsh terminal-notifier ag node jenkins zsh-completions zsh-syntax-highlighting mysql elasticsearch direnv`
+- `brew install git rbenv ruby-build vim openssl tmux reattach-to-user-namespace cmake curl imagemagick tig readline wget zsh terminal-notifier ag node jenkins zsh-completions zsh-syntax-highlighting mysql elasticsearch direnv go`
+- `brew tap motemen/ghq`
+- `brew tap peco/peco`
+- `brew install ghq peco`
+- Macvim kaoriyaをインストール
 
 ### 必要なリポジトリをhomeにclone
 1. `mkdir ~/.zsh`
@@ -31,8 +35,8 @@
 + `cd`
 
 ### dotfilesインストール(vimの設定とかが入っているもの)
-+ `git clone https://github.com/shusay/dotfiles`
-+ `cd ~/dotfiles/.tmux`
++ `ghq get git://github.com/shusaid/dotfiles.git`
++ `cd ~/src/github.com/shusaid/dotfiles/.tmux`
 + `git clone https://github.com/erikw/tmux-powerline.git`
 + `cd ../`
 + `./setup.sh`
