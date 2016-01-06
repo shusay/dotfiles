@@ -17,10 +17,11 @@
 - `chpass`でzshが有効になっていることを確認
 
 ### 各種ツールのインストール
-- `brew install git rbenv ruby-build vim openssl tmux reattach-to-user-namespace cmake curl imagemagick tig readline wget zsh terminal-notifier ag node jenkins zsh-completions zsh-syntax-highlighting mysql elasticsearch direnv go`
+- `brew install git rbenv ruby-build vim openssl tmux reattach-to-user-namespace cmake curl imagemagick tig readline wget zsh terminal-notifier ag jenkins zsh-completions zsh-syntax-highlighting mysql elasticsearch direnv go`
 - `brew tap motemen/ghq`
 - `brew tap peco/peco`
 - `brew install ghq peco`
+- `curl -L git.io/nodebrew | perl - setup`
 - Macvim kaoriyaをインストール
 
 ### 必要なリポジトリをhomeにclone
@@ -50,3 +51,12 @@
 + Profiles -> [設定したいプロファイル] -> Colors に移動
 + [Load Presets] セレクトボックスから、Import を選びます
 + 以上
+
+### Rubyのインストール
+`rbenv versions`
+`rbenv install x.xx.xx`
+
+### nodeのインストール
+`nodebrew ls-remote`
+`nodebrew install-binary v0.xx.xx`
+`nodebrew use v0.xx.xx`
