@@ -326,3 +326,6 @@ endif
 
 let g:neosnippet#enable_snipmate_compatibility = 1
 let g:loaded_syntastic_slim_slimrb_checker = 0
+
+" Quickrun
+let g:quickrun_config = {'*': {'hook/time/enable': '1'},}
