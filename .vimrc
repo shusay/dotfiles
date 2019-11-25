@@ -61,8 +61,8 @@ NeoBundle 'thinca/vim-quickrun'
 
 "" Reffernse
 NeoBundle 'thinca/vim-ref'
-" Solarized
-NeoBundle 'altercation/vim-colors-solarized'
+" bluewery
+NeoBundle 'relastle/bluewery.vim'
 
 " openbrowser
 NeoBundle 'tyru/open-browser.vim'
@@ -179,7 +179,6 @@ syntax enable
 set background=dark
 let g:Powerline_theme = 'short'
 let g:Powerline_colorscheme = 'Solarized256_dark'
-colorscheme solarized
 
 " tmux
 set clipboard=unnamed,autoselect
