@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOT_FILES=( .gemrc .zshrc .zprofile .bashrc .bash_profile .tmux.conf .tmux .vimrc .gvimrc .gitconfig .gitignore .zshrc.antigen )
+DOT_FILES=( .gemrc .zshrc .zprofile .bashrc .bash_profile .vimrc .gvimrc .gitconfig .gitignore )
 PATHES="src/github.com/shusaid/dotfiles"
 
 for file in ${DOT_FILES[@]}
@@ -19,16 +19,16 @@ do
   fi
 done
 
-# private_xml
-REMAP_FILE=( private.xml )
+# karabiner.json
+REMAP_FILE=( karabiner.json )
 
 for rfile in ${REMAP_FILE[@]}
 do
-  if [ -a $HOME/Library/Application\ Support/KeyRemap4MacBook/$rfile ]; then
-    rm -f $HOME/Library/Application\ Support/KeyRemap4MacBook/$rfile
-    ln -s $HOME/$PATHES/$rfile $HOME/Library/Application\ Support/KeyRemap4MacBook/$rfile
+  if [ -a $HOME/.config/karabiner/$rfile ]; then
+    rm -f $HOME/.config/karaniber/$rfile
+    ln -s $HOME/$PATHES/$rfile $HOME/.config/karabiner/$rfile
     echo "$rfile のシンボリックリンク貼ったよ"
   else
-    echo "KeyRemap4MacBookがないでござる"
+    echo "Karabiner-Elementsがないでござる"
   fi
 done
