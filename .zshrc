@@ -7,6 +7,10 @@ alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 alias v='vim'
 
+alias dockers='CURPATH=$(pwd) && cd ~/docker/vivivit/dev && docker-compose start && cd $CURPATH'
+alias dockerq='CURPATH=$(pwd) && cd ~/docker/vivivit/dev && docker-compose stop && cd $CURPATH'
+alias dockerps='CURPATH=$(pwd) && cd ~/docker/vivivit/dev && docker-compose ps && cd $CURPATH'
+
 source ~/.zplug/init.zsh
 
 # Make sure to use double quotes
