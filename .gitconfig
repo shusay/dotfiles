@@ -7,7 +7,7 @@
 
 [core]
 	excludesfile = /Users/shusay/.gitignore
-  editor=vim
+	editor = code --wait
 
 [alias]
   st = status

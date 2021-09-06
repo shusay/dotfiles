@@ -2,14 +2,13 @@
 eval "$(direnv hook zsh)"
 
 # vim
-export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
-alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
-alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 alias v='vim'
 
 alias dockers='CURPATH=$(pwd) && cd ~/docker/vivivit/dev && docker-compose start && cd $CURPATH'
 alias dockerq='CURPATH=$(pwd) && cd ~/docker/vivivit/dev && docker-compose stop && cd $CURPATH'
 alias dockerps='CURPATH=$(pwd) && cd ~/docker/vivivit/dev && docker-compose ps && cd $CURPATH'
+alias dockeru='CURPATH=$(pwd) && cd ~/docker/vivivit/dev && docker-compose up && cd $CURPATH'
+alias dockerd='CURPATH=$(pwd) && cd ~/docker/vivivit/dev && docker-compose down && cd $CURPATH'
 
 source ~/.zplug/init.zsh
 
@@ -107,10 +106,6 @@ fi
 # Then, source plugins and add commands to $PATH
 zplug load
 
-#-------------------------------------------#
-
-# Emacs
-alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs -nw'
 
 # completion
 fpath=($(brew --prefix)/share/zsh/site-functions $fpath)
