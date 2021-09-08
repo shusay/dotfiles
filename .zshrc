@@ -320,7 +320,6 @@ PROMPT='%F{37}✬ %f%F{254}%#@%m%f%F{65} * %f%F{254}%c%f%F{33}%f ➧ %f'
 # ----- alias ----- #
 # cmd
 alias g='git'
-alias tmux="TERM=xterm-256color tmux"
 
 alias la='ls -a'
 alias ll='ls -l'
@@ -336,15 +335,6 @@ alias bi='bundle install'
 
 # rmtrash
 alias rm='rmtrash'
-
-# rbenv
-alias re='rbenv exec'
-
-## hataraku_vivivit
-alias dhtrk='cd ~/workspace/hataraku_vivivit/vccw/www/wordpress/wp-content/themes/hatarakudesktop'
-alias shtrk='cd ~/workspace/hataraku_vivivit/vccw/www/wordpress/wp-content/themes/hatarakusp'
-
-alias sshtrk="sudo ssh -i ~/.ssh/hataraku.pem ec2-user@52.69.25.21"
 
 # rをR言語向けに確保
 disable r

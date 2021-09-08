@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOT_FILES=( .gemrc .zshrc .zprofile .bashrc .bash_profile .vimrc .gvimrc .gitconfig .gitignore )
+DOT_FILES=( .gemrc .zshrc .zprofile .bashrc .bash_profile .gitconfig .gitignore )
 PATHES="src/github.com/shusaid/dotfiles"
 
 for file in ${DOT_FILES[@]}
